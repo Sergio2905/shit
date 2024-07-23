@@ -5,7 +5,7 @@
     <title>$hit</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240723160553">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240723195031">
 </head>
 
 <body>
@@ -68,7 +68,7 @@
                             <div class="main__image">
                                 <canvas id="canvas" width="380" height="420"></canvas>
                                 <div class="main__coin main__coin_1">
-                                    <img src="img/main/coin1.svg" alt="Coin">
+                                    <span><img src="img/main/coin1.svg" alt="Coin"></span>
                                 </div>
                             </div>
                             <div class="main__text text-main">
@@ -76,26 +76,26 @@
                                     <span>the best</span>
                                     crypto
                                     <div class="main__coin main__coin_2">
-                                        <img src="img/main/coin2.svg" alt="Coin">
+                                        <span><img src="img/main/coin2.svg" alt="Coin"></span>
                                     </div>
                                 </div>
                                 <div class="text-main__right">
                                     <span>$hit</span>
                                     show
                                     <div class="main__coin main__coin_3">
-                                        <img src="img/main/coin3.svg" alt="Coin">
+                                        <span><img src="img/main/coin3.svg" alt="Coin"></span>
                                     </div>
                                     <div class="main__coin main__coin_4">
-                                        <img src="img/main/coin4.svg" alt="Coin">
+                                        <span><img src="img/main/coin4.svg" alt="Coin"></span>
                                     </div>
                                     <div class="main__coin main__coin_5">
-                                        <img src="img/main/coin5.svg" alt="Coin">
+                                        <span><img src="img/main/coin5.svg" alt="Coin"></span>
                                     </div>
                                     <div class="main__coin main__coin_6">
-                                        <img src="img/main/coin6.svg" alt="Coin">
+                                        <span><img src="img/main/coin6.svg" alt="Coin"></span>
                                     </div>
                                     <div class="main__coin main__coin_7">
-                                        <img src="img/main/coin7.svg" alt="Coin">
+                                        <span><img src="img/main/coin7.svg" alt="Coin"></span>
                                     </div>
                                 </div>
                             </div>
@@ -162,16 +162,16 @@
                                     <picture><source srcset="img/process/image.webp" type="image/webp"><img src="img/process/image.png" alt="Image"></picture>
                                 </div>
                                 <div class="decor-process__coin decor-process__coin_1">
-                                    <img src="img/process/coin1.svg" alt="Coin">
+                                    <span><img src="img/process/coin1.svg" alt="Coin"></span>
                                 </div>
                                 <div class="decor-process__coin decor-process__coin_2">
-                                    <img src="img/process/coin2.svg" alt="Coin">
+                                    <span><img src="img/process/coin2.svg" alt="Coin"></span>
                                 </div>
                                 <div class="decor-process__coin decor-process__coin_3">
-                                    <img src="img/process/coin3.svg" alt="Coin">
+                                    <span><img src="img/process/coin3.svg" alt="Coin"></span>
                                 </div>
                                 <div class="decor-process__coin decor-process__coin_4">
-                                    <img src="img/process/coin4.svg" alt="Coin">
+                                    <span><img src="img/process/coin4.svg" alt="Coin"></span>
                                 </div>
                             </div>
                             <ul class="process__list animate">
@@ -233,28 +233,36 @@
                         <p class="goals__intro animate">a wild ride to find the dopest gems in the crypto world</p>
                         <ul class="goals__list animate">
                             <li class="goals__item">
-                                <div class="goals__icon">
-                                    <img src="img/goals/icon1.svg" alt="Icon">
+                                <div class="goals__item-wrapper">
+                                    <div class="goals__icon">
+                                        <img src="img/goals/icon1.svg" alt="Icon">
+                                    </div>
+                                    <p class="goals__desc">Find the Sickest Projects</p>
                                 </div>
-                                <p class="goals__desc">Find the Sickest Projects</p>
                             </li>
                             <li class="goals__item">
-                                <div class="goals__icon">
-                                    <img src="img/goals/icon2.svg" alt="Icon">
+                                <div class="goals__item-wrapper">
+                                    <div class="goals__icon">
+                                        <img src="img/goals/icon2.svg" alt="Icon">
+                                    </div>
+                                    <p class="goals__desc">Grow the Squad</p>
                                 </div>
-                                <p class="goals__desc">Grow the Squad</p>
                             </li>
                             <li class="goals__item goals__item_yellow">
-                                <div class="goals__icon">
-                                    <img src="img/goals/icon3.svg" alt="Icon">
+                                <div class="goals__item-wrapper">
+                                    <div class="goals__icon">
+                                        <img src="img/goals/icon3.svg" alt="Icon">
+                                    </div>
+                                    <p class="goals__desc">Keep it Real with Voting</p>
                                 </div>
-                                <p class="goals__desc">Keep it Real with Voting</p>
                             </li>
                             <li class="goals__item">
-                                <div class="goals__icon">
-                                    <img src="img/goals/icon4.svg" alt="Icon">
+                                <div class="goals__item-wrapper">
+                                    <div class="goals__icon">
+                                        <img src="img/goals/icon4.svg" alt="Icon">
+                                    </div>
+                                    <p class="goals__desc">Expose the True $hit</p>
                                 </div>
-                                <p class="goals__desc">Expose the True $hit</p>
                             </li>
                         </ul>
                         <li class="goals__footer animate">
@@ -323,10 +331,12 @@
                             <div class="form__input input">
                                 <div class="input__label">name</div>
                                 <input type="text" placeholder="enter your name" name="uname">
+                                <div class="input__error">Name not valid</div>
                             </div>
                             <div class="form__input input">
                                 <div class="input__label">telegram</div>
                                 <input type="text" placeholder="enter your Telegram User Name" name="utelegram">
+                                <div class="input__error">Telegram User Name not valid</div>
                             </div>
                             <div class="form__input input">
                                 <div class="input__label">message</div>
@@ -340,16 +350,16 @@
                                     <picture><source srcset="img/form/image-l.webp" type="image/webp"><img src="img/form/image-l.png" alt="Image"></picture>
                                 </div>
                                 <div class="decor-form__coin decor-form__coin_1">
-                                    <img src="img/form/coin1.svg" alt="Coin">
+                                    <span><img src="img/form/coin1.svg" alt="Coin"></span>
                                 </div>
                                 <div class="decor-form__coin decor-form__coin_2">
-                                    <img src="img/form/coin2.svg" alt="Coin">
+                                    <span><img src="img/form/coin2.svg" alt="Coin"></span>
                                 </div>
                                 <div class="decor-form__coin decor-form__coin_3">
-                                    <img src="img/form/coin3.svg" alt="Coin">
+                                    <span><img src="img/form/coin3.svg" alt="Coin"></span>
                                 </div>
                                 <div class="decor-form__coin decor-form__coin_4">
-                                    <img src="img/form/coin4.svg" alt="Coin">
+                                    <span><img src="img/form/coin4.svg" alt="Coin"></span>
                                 </div>
                             </div>
                             <div class="decor-form__right">
@@ -357,13 +367,13 @@
                                     <picture><source srcset="img/form/image-r.webp" type="image/webp"><img src="img/form/image-r.png" alt="Image"></picture>
                                 </div>
                                 <div class="decor-form__coin decor-form__coin_5">
-                                    <img src="img/form/coin5.svg" alt="Coin">
+                                    <span><img src="img/form/coin5.svg" alt="Coin"></span>
                                 </div>
                                 <div class="decor-form__coin decor-form__coin_6">
-                                    <img src="img/form/coin6.svg" alt="Coin">
+                                    <span><img src="img/form/coin6.svg" alt="Coin"></span>
                                 </div>
                                 <div class="decor-form__coin decor-form__coin_7">
-                                    <img src="img/form/coin7.svg" alt="Coin">
+                                    <span><img src="img/form/coin7.svg" alt="Coin"></span>
                                 </div>
                             </div>
                         </div>
@@ -525,7 +535,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20240723160553"></script>
+    <script src="js/app.min.js?_v=20240723195031"></script>
 </body>
 
 </html>
